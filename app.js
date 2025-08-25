@@ -1,8 +1,7 @@
 // Simple Nod.js server
 const http = require("http");
 
-function requestListener(req, res) {
+http.createServer(function (req, res) {
   console.log(req);
 
-}
-http.createServer(requestListener);
+});
